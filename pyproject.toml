@@ -1,0 +1,32 @@
+[project]
+name = "cnlpassignment1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mulangonando",email = "mulang.onando@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "modernize (>=0.8.0,<0.9.0)",
+    "nltk (>=3.9.2,<4.0.0)",
+    "six (>=1.17.0,<2.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pylint = {extras = ["spelling"], version = "^4.0.4"}
+ruff = "^0.15.0"
+flake8 = "^7.3.0"
+mypy = "^1.19.1"
+black = "^26.1.0"
+isort = "^7.0.0"
+autoflake = "^2.3.1"
+pyupgrade = "^3.21.2"
+pydocstringformatter = "^0.7.5"
+
